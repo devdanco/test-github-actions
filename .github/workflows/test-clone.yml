@@ -19,12 +19,12 @@ jobs:
           ls -a
 
       - name: Stop previous parachain if running
-        run: make -C devops/parachain stop
+        run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop
 
       - name: Start mangata-node parachain
         env:
           ENV: rococo
-        run: make -C devops/parachain start
+        run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop start
 
       - name: logs
         run: make logs-relay
@@ -36,4 +36,6 @@ jobs:
         run: sleep 120s
 
       - name: logs
-        run: make logs-relay
+        run: |
+          cd $GITHUB_WORKSPACE/mangata-repo/devops/parachain
+          make logs-relay
