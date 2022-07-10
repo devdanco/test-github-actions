@@ -27,7 +27,9 @@ jobs:
         run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop start
 
       - name: logs
-        run: make logs-relay
+        run: |
+          cd $GITHUB_WORKSPACE/mangata-repo/devops/parachain
+          make logs-relay
 
       - name: Docker ps
         run: docker ps
