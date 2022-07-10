@@ -26,18 +26,5 @@ jobs:
           ENV: rococo
         run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop start
 
-      - name: logs
-        run: |
-          cd $GITHUB_WORKSPACE/mangata-repo/devops/parachain
-          make logs-relay
-
       - name: Docker ps
         run: docker ps
-
-      - name: Sleep for 2 minutes
-        run: sleep 120s
-
-      - name: logs
-        run: |
-          cd $GITHUB_WORKSPACE/mangata-repo/devops/parachain
-          make logs-relay
