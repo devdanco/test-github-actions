@@ -14,4 +14,6 @@ jobs:
           path: mangata-repo
           ref: develop
       - name: Check cloned repo
-        run: cd $GITHUB_WORKSPACE/mangata-repo
+        run: |
+          cd $GITHUB_WORKSPACE/mangata-repo
+          ls -a
