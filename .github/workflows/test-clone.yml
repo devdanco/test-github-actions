@@ -17,3 +17,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/mangata-repo
           ls -a
+      - name: create release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
