@@ -17,14 +17,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/mangata-repo
           ls -a
-
-      - name: Stop previous parachain if running
-        run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop
-
-      - name: Start mangata-node parachain
+      - name: create release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: npx semantic-release
         env:
-          ENV: rococo
-        run: make -C $GITHUB_WORKSPACE/mangata-repo/devops/parachain stop start
-
-      - name: Docker ps
-        run: docker ps
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
