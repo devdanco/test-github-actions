@@ -7,7 +7,8 @@ module.exports = {
     [
       "@semantic-release/changelog",
       {
-        changelogFile: "CHANGELOG.md"
+        changelogFile:
+          "https://github.com/devdanco/test-github-actions/CHANGELOG.md"
       }
     ],
     "@semantic-release/github"

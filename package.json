@@ -2,5 +2,23 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "semantic-release": "^19.0.3"
-  }
+  },
+  "name": "github-actions-test",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdanco/test-github-actions.git"
+  },
+  "keywords": [],
+  "author": "Michal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devdanco/test-github-actions/issues"
+  },
+  "homepage": "https://github.com/devdanco/test-github-actions#readme"
 }
