@@ -9,14 +9,7 @@ jobs:
     steps:
       - name: Clone mangata node repository
         uses: actions/checkout@v2
-        with:
-          repository: mangata-finance/mangata-node
-          path: mangata-repo
-          ref: develop
-      - name: Check cloned repo
-        run: |
-          cd $GITHUB_WORKSPACE/mangata-repo
-          ls -a
+
       - name: create release
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npx semantic-release
