@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/devdanco/test-github-actions/compare/v1.1.3...v1.1.4) (2022-07-12)
+
+
+### Bug Fixes
+
+* small ([ce17fcf](https://github.com/devdanco/test-github-actions/commit/ce17fcf526d802065d75824c566a5ea956f98f1e))
+
 ## [1.1.3](https://github.com/devdanco/test-github-actions/compare/v1.1.2...v1.1.3) (2022-07-12)
 
 
