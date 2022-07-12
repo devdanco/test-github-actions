@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/devdanco/test-github-actions/compare/v1.1.9...v1.2.0) (2022-07-12)
+
+
+### Bug Fixes
+
+* something ([0494503](https://github.com/devdanco/test-github-actions/commit/0494503cda789010870130f59d0cff31854d8917))
+
+
+### Features
+
+* awesome ([e868a40](https://github.com/devdanco/test-github-actions/commit/e868a40d210c148dd30ec6578f1944b3eb2c649f))
+
 ## [1.1.4](https://github.com/devdanco/test-github-actions/compare/v1.1.3...v1.1.4) (2022-07-12)
 
 
